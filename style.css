@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+  --yellow-pop: #FFE66D;
+  --coral-red: #FF5964;
+  --cyan-muted: #4ECDC4;
+  --off-white: #F7F7F7;
+  --carbon-black: #1A1A1A;
+}
+
+body {
+  background-color: var(--off-white);
+  color: var(--carbon-black);
+  font-family: 'Inter', sans-serif;
+  padding: 30px 15px;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+header, main, hr {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background-color: var(--carbon-black);
+  color: var(--off-white);
+  padding: 30px;
+  border: 4px solid var(--carbon-black);
+  box-shadow: 8px 8px 0px var(--coral-red);
+  margin-bottom: 35px;
+  border-radius: 4px;
+}
+
+header table {
+  width: 100%;
+  border: none !important;
+  box-shadow: none !important;
+  margin-top: 0 !important;
+}
+
+header td {
+  border: none !important;
+  padding: 0 10px !important;
+  background-color: transparent !important;
+}
+
+header svg {
+  border-radius: 50%;
+  border: 4px solid var(--yellow-pop);
+  box-shadow: 4px 4px 0px var(--coral-red);
+  display: block;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.2rem;
+  letter-spacing: 2px;
+  color: var(--yellow-pop);
+  margin: 0;
+  line-height: 1;
+}
+
+header h2 {
+  font-family: 'Space Mono', monospace;
+  font-size: 1.05rem;
+  color: var(--cyan-muted);
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.header-kontak {
+  margin-top: 10px;
+}
+
+header p {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.9rem;
+  color: var(--off-white);
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+header a {
+  color: var(--yellow-pop);
+  background-color: transparent;
+  border: 1px solid var(--yellow-pop);
+  padding: 3px 8px;
+  font-size: 0.85rem;
+  box-shadow: none;
+  display: inline-block;
+  transition: all 0.15s ease-in-out;
+}
+
+header a:hover {
+  background-color: var(--yellow-pop);
+  color: var(--carbon-black);
+  transform: translateX(3px);
+}
+
+section {
+  background-color: #FFFFFF;
+  border: 3px solid var(--carbon-black);
+  box-shadow: 6px 6px 0px var(--carbon-black);
+  padding: 25px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+section p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+section h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  color: var(--carbon-black);
+  border-bottom: 4px solid var(--carbon-black);
+  padding-bottom: 5px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+section h3 {
+  font-family: 'Space Mono', monospace;
+  font-size: 1.05rem;
+  background-color: var(--yellow-pop);
+  display: inline-block;
+  padding: 4px 10px;
+  border: 2px solid var(--carbon-black);
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 0px var(--carbon-black);
+}
+
+a {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--carbon-black);
+  background-color: var(--cyan-muted);
+  padding: 4px 8px;
+  border: 2px solid var(--carbon-black);
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 2px 2px 0px var(--carbon-black);
+  display: inline-block;
+  vertical-align: middle;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+a:hover {
+  background-color: var(--coral-red);
+  color: #FFFFFF;
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0px var(--carbon-black);
+}
+
+ul {
+  padding-left: 22px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+ul li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+ul li strong {
+  background-color: var(--yellow-pop);
+  padding: 2px 6px;
+  border: 1px solid var(--carbon-black);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85rem;
+  box-shadow: 2px 2px 0px var(--carbon-black);
+  margin-right: 6px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  border: 3px solid var(--carbon-black);
+}
+
+th {
+  background-color: var(--carbon-black) !important;
+  color: var(--yellow-pop);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  padding: 10px 12px;
+  border: 1px solid var(--carbon-black);
+  font-size: 0.95rem;
+}
+
+hr {
+  border: none;
+  border-top: 3px dashed var(--carbon-black);
+  margin: 35px auto;
+  width: 100%;
+}
